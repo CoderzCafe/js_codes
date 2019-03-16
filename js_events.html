@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>JavaScript events</title>
+    </head>
+
+    <body>
+
+        <h2>On change events</h2>
+        <!-- onChange events -->
+        <p id="onChangeEvnt">An HTML element has been changed</p>
+        <button type="button" onmousemove="onChangeEvent()">On change event</button>
+
+        <script>
+            function onChangeEvent() {
+                var x = document.getElementById('onChangeEvnt');
+                x.innerHTML = "This is a javascript on change event";
+            }
+        </script>
+
+    </body>
+</html>

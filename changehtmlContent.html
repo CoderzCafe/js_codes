@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Change the html content with javaScript</title>
+    </head>
+
+    <body>
+
+        <h2>What can javaScript can do?</h2>
+        <p id="demo">JavaScript can change the html content</p>
+
+
+        <button type="button" onClick="defaultText()">
+            Default text
+        </button>
+
+        <button type="button" onclick="changeContent()">
+            Click me to change text
+        </button>
+
+        <script type="text/javascript">
+        
+        //  change the html content from here
+        var x = document.getElementById('demo').innerText;
+        var str = "Hello world";
+        
+            function changeContent() {
+                document.getElementById('demo').innerHTML = str;
+            }
+
+            function defaultText() {
+                document.getElementById('demo').innerHTML = x;
+            }
+
+        </script>
+
+    </body>
+</html>

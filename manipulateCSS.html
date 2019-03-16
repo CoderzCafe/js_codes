@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>In this tutorial we age going to see manipulate CSS with javaScript</title>
+    </head>
+
+    <body>
+
+    <h2>What can a JavaSctipt do?</h2>
+
+    <p id="demo">JavaScript can change the CSS style also</p>
+    
+    <button type="button" onclick="changeTheFont()">Change font size</button>
+    <button type="button" onclick="changeTheFontColor()">Change font color</button>
+
+    <button type="button" onclick="hideTheElement()">Hide the element</button>
+    <button type="button" onclick="showTheElement()">Show the element</button>
+
+    <script type="text/javascript">
+        window.alert('hello world');
+        var button1 = document.getElementById('demo');
+
+        function changeTheFont() {
+            document.getElementById('demo').style.fontSize = '35px';
+            button1.style.color = '#000000';
+        }
+
+        function changeTheFontColor() {
+            document.getElementById('demo').style.color = '#3674e2';
+        }
+
+        function hideTheElement() {
+            button1.style.display = 'none';
+        }
+
+        function showTheElement() {
+            button1.style.display = 'block';
+        }
+        
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Change the src value of an html</title>
+    </head>
+
+    <body>
+        <h2>What can JavaScript do.?</h2>
+        <p>JavaScript can change html attributes</p>
+
+        <button type="button" onclick="changeButton1Image()">
+            Turn on the light
+        </button>
+
+        <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+        <button type="button" onclick="changeButton2Image()">
+            Turn off the light
+        </button>
+
+        <div>
+            <button type="button" onclick="myPic()">
+                Click here to see a beautiful picture
+            </button>
+        </div>
+
+        <div style="width: 300px; height: 300px;">
+            <img id="picSection" src=""/>
+        </div>
+
+        <script type="text/javascript">
+
+            function changeButton1Image() {
+                document.getElementById('myImage').src = 'pic_bulbon.gif';
+            }
+
+            var bulbSrc = 'pic_bulboff.gif';
+            var otherImageSrc = '/home/shine/Desktop/pic1.jpg';
+            function changeButton2Image() {
+                document.getElementById('myImage').src = bulbSrc;
+                document.getElementById('picSection').src = null;
+            }
+
+            function myPic() {
+                document.getElementById('picSection').src = otherImageSrc;
+            }
+
+        </script>
+
+    </body>
+
+</html>

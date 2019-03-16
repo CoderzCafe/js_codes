@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>JS Hoisting</title>
+    </head>
+
+    <p id="demo"></p>
+
+    <script>
+        x = 10;
+        let elem = document.getElementById('demo');
+        elem.innerHTML = this;
+
+        var x;
+
+        document.write(window.x);
+    </script>
+
+</html>
